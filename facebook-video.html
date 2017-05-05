@@ -1,0 +1,5 @@
+<!--Embeds a Facebook video into the page
+Don't forget to use quote marks around the video permalink.
+-->
+
+{{ (getJSON "https://www.facebook.com/plugins/video/oembed.json/?url=" (index .Params 0)).html | safeHTML }}

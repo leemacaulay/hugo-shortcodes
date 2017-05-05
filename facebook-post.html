@@ -1,0 +1,5 @@
+<!--Embeds a Facebook post into the page
+Don't forget to use quote marks around the post permalink.
+-->
+
+{{ (getJSON "https://www.facebook.com/plugins/post/oembed.json/?url=" (index .Params 0)).html | safeHTML }}
