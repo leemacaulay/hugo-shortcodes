@@ -1,6 +1,6 @@
 This is just a collection of extra [Hugo](https://hugodocs.info/) shortcodes that I'm using on my personal blog.
 
-So far, it's just a couple of shortcodes that let you embed a Facebook post or video.
+So far, one shortcode allows you to embed Facebook posts or videos while the other lets you embed Radiopublic podcast series or individual episodes
 
 ## Documentation
 
@@ -13,6 +13,12 @@ Then add these shortcodes to posts or pages where you want to embed a post or vi
 
 {{< facebook-video "POST-PERMALINK-HERE">}} e.g.   
 {{< facebook-video "https://www.facebook.com/FacebookUK/videos/10154618133906654">}}
+
+{{ radiopublic "PODCAST-NAME" (https://play.radiopublic.com/PODCAST-NAME) e.g.
+{{ radiopublic "reply-all-OWdvQ8" }}
+
+{{ radiopublic "PODCAST-NAME" "EPISODE" (https://play.radiopublic.com/PODCAST-NAME/ep/EPISODE) e.g.
+{{ radiopublic "reply-all-OWdvQ8" "s1!e67733e9c533ed2282d924d2b25993fb6802b4fe" }}
 ```
 
 [More documentation about creating custom permalinks in Hugo.](https://hugodocs.info/templates/shortcode-templates/#creating-custom-shortcodes)
